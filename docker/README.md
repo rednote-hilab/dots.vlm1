@@ -13,9 +13,10 @@ You have two options to set up the environment:
 docker run -it --gpus all lmsysorg/sglang:v0.4.9.post1-cu126
 
 # Clone and install our custom SGLang branch
-git clone https://github.com/rednote-hilab/sglang -b dots.vlm1 sglang
-cd sglang
-git checkout 359292e
+# IMPORTANT: Only our specific SGLang version supports dots.vlm1 models
+# We have submitted a PR to the main SGLang repository (currently under review):
+# https://github.com/sgl-project/sglang/pull/8778
+git git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
 pip install -e sglang/python
 ```
 
@@ -110,6 +111,7 @@ curl -X POST http://10.0.0.1:15553/v1/chat/completions \
             }
         ], 
         "temperature": 0.1, 
+        "top_p": 0.9,
         "max_tokens": 32768
     }'
 ```
