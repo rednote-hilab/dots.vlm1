@@ -25,7 +25,9 @@ We are excited to introduce **dots.vlm1**, the first vision-language model in th
 
 **Model Highlights**:
 - **NaViT Vision Encoder**: Trained entirely from scratch rather than fine-tuning an existing vision backbone. It natively supports dynamic resolution and incorporates pure visual supervision in addition to traditional text supervision, thereby enhancing the upper bound of perceptual capacity. Beyond image captioning datasets, a large amount of structured image data was introduced during pretraining to improve the model’s perceptual capabilities—particularly for tasks such as OCR.  
-- **Multimodal Training Data**: In addition to conventional approaches, dots.vlm1 leverages a wide range of synthetic data strategies to cover diverse image types (e.g., tables, charts, documents, graphics) and descriptions (e.g., alt text, dense captions, grounding annotations). Furthermore, a strong multimodal model was used to rewrite web page data with interleaved text and images, significantly improving the quality of the training corpus.  
+- **Multimodal Training Data**: In addition to conventional approaches, dots.vlm1 leverages a wide range of synthetic data strategies to cover diverse image types (e.g., tables, charts, documents, graphics) and descriptions (e.g., alt text, dense captions, grounding annotations). Furthermore, a strong multimodal model was used to rewrite web page data with interleaved text and images, significantly improving the quality of the training corpus.
+
+
 Through large-scale pretraining and carefully tuned post-training, **dots.vlm1 achieves near state-of-the-art performance in both visual perception and reasoning**, setting a new performance ceiling for open-source vision-language models—while still maintaining competitive capabilities in pure-text tasks.
 
 *Special thanks to the DeepSeek team for the excellent DeepSeek V3 model.*
@@ -565,7 +567,9 @@ Cross-modal fusion data refers to interleaved visual and textual content that tr
 
 ## 4. Future Work
 Despite the progress achieved with dots.vlm1, our evaluation reveals notable limitations in both visual perception and reasoning capabilities.  
+
 For visual perception, we plan to significantly expand the scale and diversity of cross-modal translation data. In parallel, we will continue to improve the vision encoder by exploring innovations in neural network architectures and loss function design to significantly improve training efficiency.  
+
 For visual reasoning, we prioritize advancing reinforcement learning approaches to reduce the test-time scaling gap between text-only and multimodal prompts. Furthermore, we are investigating the feasibility of shifting more reasoning ability into the pretraining stage to improve generalization and efficiency.  
 
 > Hiring!!!  
