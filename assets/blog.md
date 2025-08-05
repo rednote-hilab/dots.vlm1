@@ -1,4 +1,4 @@
-
+<div align="center">
 <p align="center">
     <img src="/assets/logo.png" width="300"/>
 <p>
@@ -11,6 +11,13 @@ dots.vlm1
 
 [![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1)
+
+<div align="center">
+  <a href="dotsvlm.xiaohongshu.com" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
+  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.jpg" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
+  <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
+</div>
+</div>
 
 ## 1. Introduction
 
@@ -33,37 +40,38 @@ Through large-scale pretraining and carefully tuned post-training, **dots.vlm1 a
 |  | | Qwen2.5VL-72B | **Gemini2.5 Pro** | **Seed-VL1.5 thinking** | dots.vlm1 |
 |------|--------|----------------|--------------------|--------------------------|-----------|
 | **STEM/Reasoning** | MMMU | 69.3 | **84.22** | 79.89 | <ins>80.11</ins> |
-|  | MMMU_pro | 51.91 | **76.5** | **68.9** | <ins>70.11</ins> |
+|  | MMMU_pro | 51.91 | **76.5** | 68.9 | <ins>70.11</ins> |
 |  | MathVision | 39.4 | **72.34** | 68.77 | <ins>69.64</ins> |
-|  | MathVista | 74.6 | 83.5 | **86.1** | <ins>83.4</ins> |
+|  | MathVista | 74.6 | 83.5 | **86.1** | <ins>85.0</ins> |
 |  | ZeroBench | 2 | **5** | 2 | <ins>4</ins> |
 |  | ZeroBench-sub | 20 | **30.24** | 25.75 | <ins>26.65</ins> |
 |  | VisuLogic | 25.6 | 29.8 | **35.9** | <ins>32.2</ins> |
-| **General Visual** | MMbench-CN | 88.2 | 89 | **89.78** | <ins>88.24</ins> |
-|  | MMbench-EN | 89.2 | **89.55** | **89.47** | <ins>88.47</ins> |
-|  | MMStar | 71.13 | **78.73** | **78.33** | <ins>76.67</ins> |
-|  | RealWorldQA | 75.9 | **78.43** | **78.69** | <ins>75.82</ins> |
+| **General Visual** | MMbench-CN | 88.2 | <ins>89</ins> | **89.78** | 88.24 |
+|  | MMbench-EN | 89.2 | **89.55** | <ins>89.47</ins> | 89.32 |
+|  | MMStar | 71.13 | **78.73** | <ins>78.33</ins> | 76.67 |
+|  | RealWorldQA | 75.9 | 78.43 | <ins>78.69</ins> | **79.08** |
 |  | Vibe(GPT4o) | 60.13 | **76.39** | 68.59 | <ins>69.24</ins> |
 |  | m3gia(cn) | 88.24 | 89.54 | **91.2** | <ins>90.85</ins> |
-|  | SimpleVQA_ds | 52.19 | 57.09 | **61.34** | <ins>55.8</ins> |
+|  | SimpleVQA_ds | 52.19 | <ins>57.09</ins> | **61.34** | 55.8 |
 |  | MMVP | 66 | 67.33 | **73.33** | <ins>72</ins> |
 |  | HallusionBench | 56.5 | 63.07 | 63.49 | **<ins>64.83</ins>** |
-|  | CVBench | 84.15 | 85.36 | **89.68** | <ins>85.25</ins> |
-|  | Blink | 61.7 | **71.86** | **72.38** | <ins>66.33</ins> |
-| **OCR/Doc/Chart** | charxiv(dq) | 88.2 | 90.3 | 89.6 | **<ins>92.1</ins>** |
+|  | CVBench | 84.15 | 85.36 | **89.68** | <ins>85.65</ins> |
+|  | Blink | 61.7 | <ins>71.86</ins> | **72.38** | <ins>66.33</ins> |
+| **OCR/Doc/Chart** | charxiv(dq) | 88.2 | <ins>90.3</ins> | 89.6 | **92.1** |
 |  | charxiv(rq) | 48.5 | **68.3** | 63.4 | <ins>64.4</ins> |
-|  | OCRReasoning | 38.02 | **70.81** | 63.42 | <ins>65.01</ins> |
-|  | DOCVQA | 96.23 | 95.42 | 93.65 | **<ins>96.52</ins>** |
-|  | ChartQA | 86.1 | 86.16 | 86.88 | **<ins>87.68</ins>** |
-|  | OCRBenchV1 | 87.1 | 86.6 | **86.7** | <ins>82.3</ins> |
-|  | AI2D | 88.3 | **91.03** | 89.05 | <ins>88.37</ins> |
+|  | OCRReasoning | 38.02 | **70.81** | 63.42 | <ins>66.23</ins> |
+|  | DOCVQA | 96.23 | <ins>95.42</ins> | 93.65 | **96.52** |
+|  | ChartQA | 86.1 | 86.16 | <ins>86.88</ins> | **87.68** |
+|  | OCRBenchV1 | 87.1 | <ins>86.6</ins> | **86.7** | 82.3 |
+|  | AI2D | 88.3 | **91.03** | <ins>89.05</ins> | 88.37 |
 | **Grounding/Counting** | RefCOCO | 90.3 | 74.6 | **91.3** | <ins>90.45</ins> |
 |  | CountBench | **92.4** | 91.79 | 89 | <ins>91.99</ins> |
 | **Multi Image** | muir | 69.38 | 70.5 | **79.77** | <ins>78.58</ins> |
-|  | mantis | 79.26 | 84.33 | 82.3 | **<ins>86.18</ins>** |
-| **Text** | LiveCodeBench | **73.3** | 70.7 | **78.4** | <ins>72.94</ins> |
-|  | AIME 2025 | **87.5** | 82.6 | **92.3** | <ins>85.83</ins> |
-|  | GPQA | **81** | 70.7 | **81.1** | <ins>72.78</ins> |
+|  | mantis | 79.26 | <ins>84.33</ins> | 82.3 | **86.18** |
+| |  | **Deepseek-R1-0528** | **Qwen3-235B-A22B** | **Qwen3-235B-A22B-think-2507**|**dots.vlm1**|
+| **Text** | LiveCodeBench | <ins>73.3</ins> | 70.7 | **78.4** | 72.94 |
+|  | AIME 2025 | <ins>87.5</ins> | 82.6 | **92.3** | 85.83 |
+|  | GPQA | <ins>81</ins> | 70.7 | **81.1** | 72.78 |
 
 > Due to the inability to reliably reproduce reported results, we re-evaluated all models using our evaluation pipeline. Our evaluation configuration is as follows:  
 > For multiple-choice datasets (including MMMU, MMMU_Pro, and related benchmarks), we adopted the default inference and evaluation protocols established by VLMEvalKit. To minimize errors during the response-to-option mapping stage, we inhibit rule-based extraction in favor of a model-based solution (see the corresponding [pull request](https://github.com/open-compass/VLMEvalKit/pull/1175) for details). For the MMVP dataset, we report pair-accuracy metrics following the SeedVL evaluation framework.  
@@ -569,10 +577,17 @@ For visual reasoning, we prioritize advancing reinforcement learning approaches 
 > Please reach out to us via email at: martin [dot] xiaohongshu [dot] com
 
 ## 5. Author List
-Core Contributor: 阿渡/白珩/沧行/德克/国海/简米/莱特/连轩/千悟/乔羽/时墨/时清/天南/温良/无幻/小智/燕青/一朗/云开/洪凌屹/叶意檬/马祎炜/李雨萌  
-Contributor: 小红书 hilab 研发团队   
-Project Lead: 柯雄   
-Advisor: 宇尘/凯奇   
+### Core Contributor
+ADu, Baiheng, Chaohui Yu, Guang Yang, Guangwei Zhao, Guofu, Guohai Xu, Hack Hong, Hao Liu, Jiayu Chen, Jie Lou, Laite, Liang Xin, Qianwu, Rui Yang, Shengdong Chen, Weijian Luo, Wenliang, Wenze, Xiaozhi, Xing Wu, Yimeng Ye, Yiwei Ma, Yumeng Li, Yunkai, Yuqiu Ji, Zhenhang Huang
+
+### Contributor
+rednote hilab all
+
+### Project Lead
+Colin Zhang
+
+### Advisor
+Debing Zhang, Lei Zhang
 
 
 [1] Enrico Fini and Mustafa Shukor and Xiujun Li and Philipp Dufter and Michal Klein and David Haldimann and Sai Aitharaju and Victor Guilherme Turrisi da Costa and Louis Béthune and Zhe Gan and Alexander T Toshev and Marcin Eichner and Moin Nabi and Yinfei Yang and Joshua M. Susskind and Alaaeldin El-Nouby. Multimodal Autoregressive Pre-training of Large Vision Encoders. CVPR 2025. 
