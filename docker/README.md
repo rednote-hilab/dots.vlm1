@@ -112,6 +112,6 @@ curl -X POST http://10.0.0.1:15553/v1/chat/completions \
         ], 
         "temperature": 0.1, 
         "top_p": 0.9,
-        "max_tokens": 32768
+        "max_tokens": 55000
     }'
 ```
