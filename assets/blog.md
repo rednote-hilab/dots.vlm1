@@ -540,7 +540,7 @@ Thus, Betty's word is CHEWY.
 - **Stage 2: VLM Pretraining** — The vision encoder and DeepSeek V3 LLM are jointly pretrained on large-scale, diverse multimodal datasets.
 - **Stage 3: VLM Post-training** — A final phase of supervised fine-tuning (SFT) is performed using task-varied data to enhance generalization.  
 
-*Training note: Post-training only includes supervised fine-tuning (SFT); reinforcement learning methods are planned for future work.* . 
+*Training note: Post-training only includes supervised fine-tuning (SFT); reinforcement learning methods are planned for future work.*  
 
 ### 3.2 NaVIT Vision Encoder
 We developed a two-phase training strategy for the NaViT encoder—while the overall structure and training method are similar to AimV2[1], our model is trained entirely from scratch at native resolution. The 1.2B vision encoder comprises 42 transformer layers, incorporating techniques such as RMSNorm, SwiGLU, and 2D RoPE.
