@@ -9,12 +9,12 @@
 dots.vlm1
 </h1>
 
-[![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1)
+[![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1/blob/main/assets/blog.md)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1)
 
 <div align="center">
-  <a href="dotsvlm.xiaohongshu.com" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
-  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.jpg" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
+  <a href="https://huggingface.co/spaces/rednote-hilab/dots-vlm1-demo" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
+  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
   <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
 </div>
 </div>
@@ -562,7 +562,7 @@ It is difficult to exhaustively enumerate all types of cross-modal translation d
 #### Cross-Modal Fusion Data
 Cross-modal fusion data refers to interleaved visual and textual content that trains the model to perform next-token prediction in complex multimodal contexts, helping mitigate over-reliance on any single modality. We designed careful preprocessing pipelines for various types of interleaved data, with two particularly effective categories:
 - **Web Data**: We found that image-text data from web pages offers rich diversity but often suffers from weak visual-textual alignment. Rather than relying on traditional CLIP-score based filtering, we used an in-house VLM to rewrite and clean the data, removing low-quality images and irrelevant or weakly grounded text content.
-- **PDF data**: We observed that PDF data is often of high quality. To fully leverage this, we developed a dedicated parsing model, dots.ocr, which converts PDF documents into interleaved image-text representations. Additionally, we render full PDF pages as images and selectively mask text blocks, prompting the model to reconstruct the masked content using layout and contextual cues—enhancing its ability to read and understand visually formatted documents.  
+- **PDF data**: We observed that PDF data is often of high quality. To fully leverage this, we developed a dedicated parsing model, [dots.ocr](https://huggingface.co/rednote-hilab/dots.ocr), which converts PDF documents into interleaved image-text representations. Additionally, we render full PDF pages as images and selectively mask text blocks, prompting the model to reconstruct the masked content using layout and contextual cues—enhancing its ability to read and understand visually formatted documents.  
 
 
 ## 4. Future Work
@@ -574,14 +574,14 @@ For visual reasoning, we prioritize advancing reinforcement learning approaches 
 
 > Hiring!!!  
 > We believe that collaboration is the key to tackling these exciting challenges. If you are passionate about advancing the frontiers of multimodal intelligence, we would love to hear from you.  
-> Please reach out to us via email at: martin [dot] xiaohongshu [dot] com
+> Please reach out to us via email at: martin [at] xiaohongshu [dot] com
 
 ## 5. Author List
 ### Core Contributor
 ADu, Baiheng, Chaohui Yu, Guang Yang, Guangwei Zhao, Guofu, Guohai Xu, Hack Hong, Hao Liu, Jiayu Chen, Jie Lou, Laite, Liang Xin, Qianwu, Rui Yang, Shengdong Chen, Weijian Luo, Wenliang, Wenze, Xiaozhi, Xing Wu, Yimeng Ye, Yiwei Ma, Yumeng Li, Yunkai, Yuqiu Ji, Zhenhang Huang
 
 ### Contributor
-rednote hilab all
+rednote hi lab all
 
 ### Project Lead
 Colin Zhang
