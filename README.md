@@ -19,7 +19,7 @@ dots.vlm1
 </div>
 </div>
 
-## Introduction
+## 1. Introduction
 
 We are excited to introduce **dots.vlm1**, the first vision-language model in the dots model family. Built upon a 1.2 billion-parameter vision encoder and the DeepSeek V3 large language model (LLM), **dots.vlm1** demonstrates strong multimodal understanding and reasoning capabilities.  
 
