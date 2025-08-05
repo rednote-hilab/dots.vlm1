@@ -82,14 +82,17 @@ You have two options to set up the environment:
 docker run -it --gpus all lmsysorg/sglang:v0.4.9.post1-cu126
 
 # Clone and install our custom SGLang branch
-git clone https://github.com/rednote-hilab/sglang -b dots.vlm1 sglang
+# IMPORTANT: Only our specific SGLang version supports dots.vlm1 models
+# We have submitted a PR to the main SGLang repository (currently under review):
+# https://github.com/sgl-project/sglang/pull/8778
+git git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
 pip install -e sglang/python
 ```
 
 #### Option 2: Using Pre-built Image (Recommended)
 ```bash
 # Use our pre-built image with dots.vlm1 support
-docker run -it --gpus all rednotehilab/dots1_sglang:v0.4.9.post1-cu126
+docker run -it --gpus all rednotehilab/dots.vlm1_sglang:v0.4.9.post1-cu126
 ```
 
 ### Multi-Node Deployment
@@ -146,6 +149,15 @@ python3 -m sglang.launch_server \
     --cuda-graph-max-bs 64 \
     --quantization fp8
 ```
+### Configuration Parameters
+
+Key parameters explanation:
+- `--tp 16`: Tensor parallelism across 16 GPUs per node
+- `--nnodes 2`: Total number of nodes in the cluster
+- `--node-rank`: Node identifier (0 for master, 1+ for workers)
+- `--context-length 65536`: Maximum context length
+- `--quantization fp8`: Use FP8 quantization for efficiency
+- `--chat-template dots-vlm`: Use custom chat template for dots.vlm model
 
 ### API Usage
 
@@ -168,20 +180,7 @@ curl -X POST http://10.0.0.1:15553/v1/chat/completions \
             }
         ], 
         "temperature": 0.1, 
+        "top_p": 0.9,
         "max_tokens": 32768
     }'
 ```
-
-### Benchmarking
-
-For benchmarking examples and advanced usage, please refer to: https://github.com/sgl-project/sglang/tree/main/benchmark/deepseek_v3
-
-### Configuration Parameters
-
-Key parameters explanation:
-- `--tp 16`: Tensor parallelism across 16 GPUs per node
-- `--nnodes 2`: Total number of nodes in the cluster
-- `--node-rank`: Node identifier (0 for master, 1+ for workers)
-- `--context-length 65536`: Maximum context length
-- `--quantization fp8`: Use FP8 quantization for efficiency
-- `--chat-template dots-vlm`: Use custom chat template for dots.vlm model
