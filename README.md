@@ -1,6 +1,6 @@
 <div align="center">
 <p align="center">
-    <img src="/assets/logo.png" width="300"/>
+    <img src="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/logo.png" width="300"/>
 <p>
 
 
@@ -14,7 +14,7 @@ dots.vlm1
 
 <div align="center">
   <a href="https://dotsvlm.xiaohongshu.com" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
-  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.jpg" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
+  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
   <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
 </div>
 </div>
