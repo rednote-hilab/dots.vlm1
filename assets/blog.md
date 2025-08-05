@@ -28,10 +28,6 @@ We are excited to introduce **dots.vlm1**, the first vision-language model in th
 - **Multimodal Training Data**: In addition to conventional approaches, dots.vlm1 leverages a wide range of synthetic data strategies to cover diverse image types (e.g., tables, charts, documents, graphics) and descriptions (e.g., alt text, dense captions, grounding annotations). Furthermore, a strong multimodal model was used to rewrite web page data with interleaved text and images, significantly improving the quality of the training corpus.  
 Through large-scale pretraining and carefully tuned post-training, **dots.vlm1 achieves near state-of-the-art performance in both visual perception and reasoning**, setting a new performance ceiling for open-source vision-language models—while still maintaining competitive capabilities in pure-text tasks.
 
-**Code**: xxxx(待补充)   
-**Huggingface**: xxxx(待补充)  
-**Demo**: xxxx(待补充)  
-
 *Special thanks to the DeepSeek team for the excellent DeepSeek V3 model.*
 
 ## 2. Performance
