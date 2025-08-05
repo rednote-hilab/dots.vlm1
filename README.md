@@ -89,7 +89,7 @@ pip install -e sglang/python
 #### Option 2: Using Pre-built Image (Recommended)
 ```bash
 # Use our pre-built image with dots.vlm1 support
-docker run -it --gpus all rednotehilab/dots1_sglang:v0.4.9.post1-cu126
+docker run -it --gpus all rednotehilab/dots.vlm1_sglang:v0.4.9.post1-cu126
 ```
 
 ### Multi-Node Deployment

@@ -14,13 +14,15 @@ docker run -it --gpus all lmsysorg/sglang:v0.4.9.post1-cu126
 
 # Clone and install our custom SGLang branch
 git clone https://github.com/rednote-hilab/sglang -b dots.vlm1 sglang
+cd sglang
+git checkout 359292e
 pip install -e sglang/python
 ```
 
 #### Option 2: Using Pre-built Image (Recommended)
 ```bash
 # Use our pre-built image with dots.vlm1 support
-docker run -it --gpus all rednotehilab/dots1_sglang:v0.4.9.post1-cu126
+docker run -it --gpus all rednotehilab/dots.vlm1_sglang:v0.4.9.post1-cu126
 ```
 
 ### Multi-Node Deployment
