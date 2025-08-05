@@ -9,12 +9,12 @@
 dots.vlm1
 </h1>
 
-[![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1)
+[![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1/blob/main/assets/blog.md)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1)
 
 <div align="center">
-  <a href="dotsvlm.xiaohongshu.com" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
-  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.jpg" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
+  <a href="https://dotsvlm.xiaohongshu.com" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
+  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
   <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
 </div>
 </div>
@@ -574,7 +574,7 @@ For visual reasoning, we prioritize advancing reinforcement learning approaches 
 
 > Hiring!!!  
 > We believe that collaboration is the key to tackling these exciting challenges. If you are passionate about advancing the frontiers of multimodal intelligence, we would love to hear from you.  
-> Please reach out to us via email at: martin [dot] xiaohongshu [dot] com
+> Please reach out to us via email at: martin [at] xiaohongshu [dot] com
 
 ## 5. Author List
 ### Core Contributor
