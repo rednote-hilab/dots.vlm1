@@ -16,7 +16,7 @@ docker run -it --gpus all lmsysorg/sglang:v0.4.9.post1-cu126
 # IMPORTANT: Only our specific SGLang version supports dots.vlm1 models
 # We have submitted a PR to the main SGLang repository (currently under review):
 # https://github.com/sgl-project/sglang/pull/8778
-git git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
+git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
 pip install -e sglang/python
 ```
 
@@ -93,25 +93,30 @@ Key parameters explanation:
 ### API Usage
 
 Once the servers are launched, you can access the model through OpenAI-compatible API:
-
 ```bash
 curl -X POST http://10.0.0.1:15553/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "model", 
+        "model": "model",
         "messages": [
             {
-                "role": "user", 
+                "role": "user",
                 "content": [
                     {
-                        "type": "text", 
-                        "text": "Hello, how are you?"
+                        "type": "text",
+                        "text": "Please briefly describe this image"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
+                        }
                     }
                 ]
             }
-        ], 
-        "temperature": 0.1, 
+        ],
+        "temperature": 0.1,
         "top_p": 0.9,
-        "max_tokens": 32768
+        "max_tokens": 55000
     }'
 ```
