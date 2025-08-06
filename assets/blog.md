@@ -10,11 +10,11 @@ dots.vlm1
 </h1>
 
 [![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1/blob/main/assets/blog.md)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1.inst)
 
 <div align="center">
   <a href="https://huggingface.co/spaces/rednote-hilab/dots-vlm1-demo" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
-  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/master/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
+  <a href="https://raw.githubusercontent.com/rednote-hilab/dots.vlm1/main/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
   <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
 </div>
 </div>
