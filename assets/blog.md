@@ -333,7 +333,7 @@ Thus, the fraction of the square shaded blue is \frac{2}{3} .
 
 <img src="/assets/cases/1040025031km3cg062003b8stno.png" width="300"/>   
 
-**Prompt**: the area of the blue triangle is 12 and the area of the gray triangle is 9. what is the area of the orange rectangle?
+**Prompt**: the area of the blue triangle is 12 which is a right triangle and the area of the gray triangle is 9 which is a right triangle. what is the area of the orange rectangle?
 
 **Response**: `<think>`…`</think>`   
 The blue triangle has a base of 3 and an area of 12. The area of a triangle is given by \frac{1}{2} \times \text{base} \times \text{height}. Solving for the height:
@@ -445,7 +445,7 @@ The Rebus puzzle features the word "LOAD" written vertically, with each letter s
 
 <img src="/assets/cases/1040025031kolsok7i000i9pnps.png" width="300"/>   
 
-**Prompt**: Which movie do these emojis remind you of?
+**Prompt**: Which novel do these emojis remind you of?
 
 **Response**: `<think>`…`</think>`   
 The emojis 🎶🐦&🐍 most likely represent the novel "The Ballad of Songbirds and Snakes" by Suzanne Collins, which is a prequel to "The Hunger Games" series. Here's why:
