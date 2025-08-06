@@ -83,9 +83,10 @@ docker run -it --gpus all lmsysorg/sglang:v0.4.9.post1-cu126
 
 # Clone and install our custom SGLang branch
 # IMPORTANT: Only our specific SGLang version supports dots.vlm1 models
+# NOTE: This installation must be done on EVERY node in your cluster
 # We have submitted a PR to the main SGLang repository (currently under review):
 # https://github.com/sgl-project/sglang/pull/8778
-git git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
+git clone --branch dots.vlm1.v1 https://github.com/rednote-hilab/sglang sglang
 pip install -e sglang/python
 ```
 
@@ -106,17 +107,22 @@ Our model supports distributed deployment across multiple machines. Here's how t
 
 #### Node 1 (Master - rank 0):
 ```bash
-export HF_MODEL_PATH="rednote-hilab/dots.vlm1.inst"
+# Recommend downloading model locally to avoid timeout during startup
+# Use: huggingface-cli download rednote-hilab/dots.vlm1.inst --local-dir ./dots.vlm1.inst
+export HF_MODEL_PATH="rednote-hilab/dots.vlm1.inst"  # or local path like ./dots.vlm1.inst
+# Get actual IP address: hostname -I | awk '{print $1}' or ip route get 1 | awk '{print $7}'
+export MASTER_IP="10.0.0.1"  # Replace with actual master node IP
+export API_PORT=15553
 
 python3 -m sglang.launch_server \
     --model-path $HF_MODEL_PATH \
     --tp 16 \
-    --dist-init-addr 10.0.0.1:23456 \
+    --dist-init-addr $MASTER_IP:23456 \
     --nnodes 2 \
     --node-rank 0 \
     --trust-remote-code \
     --host 0.0.0.0 \
-    --port 15553 \
+    --port $API_PORT \
     --context-length 65536 \
     --max-running-requests 64 \
     --disable-radix-cache \
@@ -129,17 +135,20 @@ python3 -m sglang.launch_server \
 
 #### Node 2 (Worker - rank 1):
 ```bash
+# Use the same variables as defined in Node 1
 export HF_MODEL_PATH="rednote-hilab/dots.vlm1.inst"
+export MASTER_IP="10.0.0.1"  # Must match Node 1
+export API_PORT=15553
 
 python3 -m sglang.launch_server \
     --model-path $HF_MODEL_PATH \
     --tp 16 \
-    --dist-init-addr 10.0.0.1:23456 \
+    --dist-init-addr $MASTER_IP:23456 \
     --nnodes 2 \
     --node-rank 1 \
     --trust-remote-code \
     --host 0.0.0.0 \
-    --port 15553 \
+    --port $API_PORT \
     --context-length 65536 \
     --max-running-requests 64 \
     --disable-radix-cache \
@@ -162,25 +171,31 @@ Key parameters explanation:
 ### API Usage
 
 Once the servers are launched, you can access the model through OpenAI-compatible API:
-
 ```bash
-curl -X POST http://10.0.0.1:15553/v1/chat/completions \
+# Use the same MASTER_IP and API_PORT as defined above
+curl -X POST http://$MASTER_IP:$API_PORT/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "model", 
+        "model": "model",
         "messages": [
             {
-                "role": "user", 
+                "role": "user",
                 "content": [
                     {
-                        "type": "text", 
-                        "text": "Hello, how are you?"
+                        "type": "text",
+                        "text": "Please briefly describe this image"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
+                        }
                     }
                 ]
             }
-        ], 
-        "temperature": 0.1, 
+        ],
+        "temperature": 0.1,
         "top_p": 0.9,
-        "max_tokens": 32768
+        "max_tokens": 55000
     }'
 ```
