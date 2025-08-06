@@ -5,10 +5,6 @@
 
 
 
-<h1 align="center">
-dots.vlm1
-</h1>
-
 [![Blog](https://img.shields.io/badge/Blog-View_on_GitHub-333.svg?logo=github)](https://github.com/rednote-hilab/dots.vlm1/blob/main/assets/blog.md)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1.inst)
 
