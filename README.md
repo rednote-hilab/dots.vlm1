@@ -9,7 +9,7 @@
 [![HuggingFace](https://img.shields.io/badge/HuggingFace%20Weights-black.svg?logo=HuggingFace)](https://huggingface.co/rednote-hilab/dots.vlm1.inst)
 
 <div align="center">
-  <a href="https://huggingface.co/spaces/rednote-hilab/dots-vlm1-demo" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
+  <a href="https://huggingface.co/spaces/rednote-hilab/dots-vlm1-demo2" target="_blank" rel="noopener noreferrer"><strong>🖥️ Live Demo</strong></a> | 
   <a href="/assets/wechat.png" target="_blank" rel="noopener noreferrer"><strong>💬 WeChat</strong></a> | 
   <a href="https://www.xiaohongshu.com/user/profile/683ffe42000000001d021a4c" target="_blank" rel="noopener noreferrer"><strong>📕 rednote</strong></a>
 </div>
