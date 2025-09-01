@@ -574,7 +574,7 @@ For visual reasoning, we prioritize advancing reinforcement learning approaches 
 
 ## 5. Author List
 ### Core Contributor
-ADu, Baiheng, Chaohui Yu, Guang Yang, Guangwei Zhao, Guofu, Guohai Xu, Hack Hong, Hao Liu, Jiayu Chen, Jie Lou, Laite, Liang Xin, Qianwu, Rui Yang, Shengdong Chen, Weijian Luo, Wenliang, Wenze, Xiaozhi, Xing Wu, Yimeng Ye, Yiwei Ma, Yumeng Li, Yunkai, Yuqiu Ji, Zhenhang Huang
+ADu, Baiheng, Chaohui Yu, Guang Yang, Guangwei Zhao, Guofu, Guohai Xu, Hao Liu, Jack Hong, Jiayu Chen, Jie Lou, Laite, Liang Xin, Qianwu, Rui Yang, Shengdong Chen, Weijian Luo, Wenliang, Wenze, Xiaozhi, Xing Wu, Yimeng Ye, Yiwei Ma, Yumeng Li, Yunkai, Yuqiu Ji, Zhenhang Huang
 
 ### Contributor
 rednote hi lab all
